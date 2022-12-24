@@ -1,0 +1,42 @@
+name: divan_app
+description: Divan Hotel Applcation for online booking.
+
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.18.2 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  google_fonts: ^3.0.1
+  shared_preferences: ^2.0.15
+  carousel_slider: ^4.2.1
+  flutter_svg: ^1.1.6
+  flutter_form_builder: ^7.7.0
+  flutter_localization: ^0.1.9
+  form_builder_validators: ^8.4.0
+  flutter_launcher_icons: ^0.11.0
+  font_awesome_flutter: ^10.3.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - Assets/Image/
+    - Assets/SVG/
+
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "Assets/icons/1024.png"
