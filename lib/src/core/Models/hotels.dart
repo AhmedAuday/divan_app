@@ -24,21 +24,27 @@ class HotelsRoom {
   });
 
   static Map<String, Widget> featuears = {
-    'AC/Heater': SvgIcons(url: "Assets/SVG/air-conditioner-svgrepo-com.svg"),
-    'Baby Bed': SvgIcons(url: "Assets/SVG/baby-bed-svgrepo-com.svg"),
-    'Screens': SvgIcons(url: "Assets/SVG/lcd-hd-monitor-svgrepo-com.svg"),
-    'Car Parking': SvgIcons(url: "Assets/SVG/car-parking-svgrepo-com.svg"),
-    '24/7 Service': SvgIcons(url: "Assets/SVG/dish-svgrepo-com.svg"),
-    'Doctors': SvgIcons(url: "Assets/SVG/doctor-svgrepo-com.svg"),
-    'Hubs': SvgIcons(url: "Assets/SVG/electronic-passkey-svgrepo-com.svg"),
-    'House Keeping': SvgIcons(url: "Assets/SVG/housekeeper-svgrepo-com.svg"),
-    'Mini Bar': SvgIcons(url: "Assets/SVG/kitchen-fridge-svgrepo-com.svg"),
-    'laundry': SvgIcons(url: "Assets/SVG/laundry-svgrepo-com.svg"),
-    'Meeting': SvgIcons(url: "Assets/SVG/meeting-svgrepo-com.svg"),
-    'Pool': SvgIcons(url: "Assets/SVG/pool-svgrepo-com.svg"),
-    'Stlite ': SvgIcons(url: "Assets/SVG/satellite-dish-svgrepo-com-2.svg"),
+    'AC/Heater':
+        const SvgIcons(url: "Assets/SVG/air-conditioner-svgrepo-com.svg"),
+    'Baby Bed': const SvgIcons(url: "Assets/SVG/baby-bed-svgrepo-com.svg"),
+    'Screens': const SvgIcons(url: "Assets/SVG/lcd-hd-monitor-svgrepo-com.svg"),
+    'Car Parking':
+        const SvgIcons(url: "Assets/SVG/car-parking-svgrepo-com.svg"),
+    '24/7 Service': const SvgIcons(url: "Assets/SVG/dish-svgrepo-com.svg"),
+    'Doctors': const SvgIcons(url: "Assets/SVG/doctor-svgrepo-com.svg"),
+    'Hubs':
+        const SvgIcons(url: "Assets/SVG/electronic-passkey-svgrepo-com.svg"),
+    'House Keeping':
+        const SvgIcons(url: "Assets/SVG/housekeeper-svgrepo-com.svg"),
+    'Mini Bar':
+        const SvgIcons(url: "Assets/SVG/kitchen-fridge-svgrepo-com.svg"),
+    'laundry': const SvgIcons(url: "Assets/SVG/laundry-svgrepo-com.svg"),
+    'Meeting': const SvgIcons(url: "Assets/SVG/meeting-svgrepo-com.svg"),
+    'Pool': const SvgIcons(url: "Assets/SVG/pool-svgrepo-com.svg"),
+    'Stlite ':
+        const SvgIcons(url: "Assets/SVG/satellite-dish-svgrepo-com-2.svg"),
     'Smoke Detector':
-        SvgIcons(url: "Assets/SVG/smoke-detector-svgrepo-com.svg"),
+        const SvgIcons(url: "Assets/SVG/smoke-detector-svgrepo-com.svg"),
   };
 }
 

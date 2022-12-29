@@ -1,6 +1,7 @@
+// ignore_for_file: unused_import
+
 import 'package:divan_app/src/core/Models/hotels.dart';
 import 'package:divan_app/src/interface/Screens/book_now_page.dart';
-import 'package:divan_app/src/interface/Screens/hotel_rooms_page.dart';
 
 import 'package:flutter/material.dart';
 import '../Widget/background_image.dart';
