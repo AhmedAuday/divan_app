@@ -131,6 +131,8 @@ class _BookNowPageState extends State<BookNowPage> {
                                     children: [
                                       const SizedBox(height: 15),
                                       FormBuilderDateRangePicker(
+                                        cursorColor: Colors.amber,
+                                        currentDate: DateTime.now(),
                                         validator:
                                             FormBuilderValidators.compose([
                                           FormBuilderValidators.required()
