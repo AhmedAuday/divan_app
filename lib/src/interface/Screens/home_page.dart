@@ -31,46 +31,41 @@ class _HomePageState extends State<HomePage> {
       body: Stack(
         children: [
           const BackgroundImage(),
-          ListView(
+          Column(
             children: [
-              Column(
-                children: [
-                  const Padding(
-                      padding: EdgeInsets.only(top: 20),
-                      child: CustomImageContainer(
-                        width: 330,
-                        hight: 210,
-                        img: NetworkImage(divanHotel),
-                      )),
-                  Padding(
-                    padding:
-                        const EdgeInsets.only(top: 20, left: 15, right: 15),
-                    child: CustomButton(
-                      text: "Book Now",
-                      onTap: (() {
-                        Navigator.pushNamed(
-                          context,
-                          BookNowPage.id,
-                        );
-                      }),
-                      buttonColor: secondaryColor,
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(top: 20),
-                    child: Text(
-                      "Spical Offers",
-                      style: title1,
-                    ),
-                  ),
-                  const SizedBox(
-                    height: 200,
-                    child: Padding(
-                      padding: EdgeInsets.only(left: 10, right: 10, top: 10),
-                      child: CustCarouselSlider(),
-                    ),
-                  ),
-                ],
+              const Padding(
+                  padding: EdgeInsets.only(top: 20),
+                  child: CustomImageContainer(
+                    width: 330,
+                    hight: 210,
+                    img: NetworkImage(divanHotel),
+                  )),
+              Padding(
+                padding: const EdgeInsets.only(top: 20, left: 15, right: 15),
+                child: CustomButton(
+                  text: "Book Now",
+                  onTap: (() {
+                    Navigator.pushNamed(
+                      context,
+                      BookNowPage.id,
+                    );
+                  }),
+                  buttonColor: secondaryColor,
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(top: 20),
+                child: Text(
+                  "Spical Offers",
+                  style: title1,
+                ),
+              ),
+              const SizedBox(
+                height: 200,
+                child: Padding(
+                  padding: EdgeInsets.only(left: 10, right: 10, top: 10),
+                  child: CustCarouselSlider(),
+                ),
               ),
               Padding(
                 padding: const EdgeInsets.only(top: 30),
