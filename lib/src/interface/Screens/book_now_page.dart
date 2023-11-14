@@ -57,7 +57,7 @@ class _BookNowPageState extends State<BookNowPage> {
   Widget build(BuildContext context) {
     HotelsRoom? hotelsRoom;
     bool data = true;
-    print("error: ${ModalRoute.of(context)!.settings.arguments.toString()}");
+    // print("error: ${ModalRoute.of(context)!.settings.arguments.toString()}");
     if (ModalRoute.of(context)!.settings.arguments.toString() == "null") {
       data = true;
     } else {
@@ -131,6 +131,8 @@ class _BookNowPageState extends State<BookNowPage> {
                                     children: [
                                       const SizedBox(height: 15),
                                       FormBuilderDateRangePicker(
+                                        cursorColor: Colors.amber,
+                                        currentDate: DateTime.now(),
                                         validator:
                                             FormBuilderValidators.compose([
                                           FormBuilderValidators.required()

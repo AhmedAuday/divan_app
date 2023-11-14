@@ -59,18 +59,18 @@ class CustomCard extends StatelessWidget {
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceAround,
                             children: [
-                              SvgIcons(url: bedIcon),
+                              const SvgIcons(url: bedIcon),
                               Text(hotelRoom!.numBed),
-                              SvgIcons(url: areaIcon),
+                              const SvgIcons(url: areaIcon),
                               Text(hotelRoom!.area),
                             ],
                           ),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceAround,
                             children: [
-                              SvgIcons(url: parkView),
+                              const SvgIcons(url: parkView),
                               Text(hotelRoom!.viewType),
-                              SvgIcons(url: bedIcon),
+                              const SvgIcons(url: bedIcon),
                               Text(hotelRoom!.bedType),
                             ],
                           ),

@@ -1,5 +1,6 @@
 // ignore_for_file: depend_on_referenced_packages
 
+import 'package:divan_app/src/interface/Screens/login_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:form_builder_validators/localization/l10n.dart';
@@ -40,7 +41,7 @@ class _DivanAppState extends State<DivanApp> {
         NavBarPage.id: (context) => const NavBarPage(),
         BookNowPage.id: (context) => const BookNowPage(),
       },
-      home: const NavBarPage(),
+      home: const LoginPage(),
     );
   }
 }
