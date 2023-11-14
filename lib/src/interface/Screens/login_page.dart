@@ -30,66 +30,69 @@ class _LoginPageState extends State<LoginPage> {
       child: SafeArea(
         child: Scaffold(
           backgroundColor: loginPage,
-          body: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Container(
-                width: 200,
-                height: 200,
-                decoration: const BoxDecoration(
-                  image: DecorationImage(
-                    image: AssetImage("Assets/Image/divan.png"),
+          body: SingleChildScrollView(
+            // Wrap with SingleChildScrollView
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Container(
+                  width: 200,
+                  height: 200,
+                  decoration: const BoxDecoration(
+                    image: DecorationImage(
+                      image: AssetImage("Assets/Image/divan.png"),
+                    ),
                   ),
                 ),
-              ),
-              Padding(
-                padding: const EdgeInsets.only(
-                  bottom: 10,
-                  right: 15,
-                  left: 15,
+                Padding(
+                  padding: const EdgeInsets.only(
+                    bottom: 10,
+                    right: 15,
+                    left: 15,
+                  ),
+                  child: CustomFormTextField(
+                    controller: userController,
+                    errorText: _validateUser ? "Field is Required" : null,
+                    hintText: "Email",
+                  ),
                 ),
-                child: CustomFormTextField(
-                  controller: userController,
-                  errorText: _validateUser ? "Field is Required" : null,
-                  hintText: "Email",
+                Padding(
+                  padding: const EdgeInsets.only(right: 15, left: 15),
+                  child: CustomFormTextField(
+                    obs: true,
+                    controller: passController,
+                    errorText: _validatePass
+                        ? "Required Field And 8 char At least"
+                        : null,
+                    hintText: "Password",
+                  ),
                 ),
-              ),
-              Padding(
-                padding: const EdgeInsets.only(right: 15, left: 15),
-                child: CustomFormTextField(
-                  obs: true,
-                  controller: passController,
-                  errorText: _validatePass
-                      ? "Required Field And 8 char At least"
-                      : null,
-                  hintText: "Password",
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.all(20.0),
-                child: CustomButton(
-                    text: "Login",
-                    onTap: (() {
-                      setState(() {
-                        userController.text.isEmpty
-                            ? _validateUser = true
-                            : _validateUser = false;
-                        passController.text.isEmpty &&
-                                passController.text.length < 8
-                            ? _validatePass = true
-                            : _validatePass = false;
-                      });
-                      if (userController.text.isNotEmpty &&
-                          passController.text.isNotEmpty &&
-                          passController.text.length > 8) {
-                        Navigator.pushNamed(context, NavBarPage.id);
-                        showSnackBar(context, "successfully Logied in");
-                      } else {
-                        showSnackBar(context, "Wrong");
-                      }
-                    })),
-              )
-            ],
+                Padding(
+                  padding: const EdgeInsets.all(20.0),
+                  child: CustomButton(
+                      text: "Login",
+                      onTap: (() {
+                        setState(() {
+                          userController.text.isEmpty
+                              ? _validateUser = true
+                              : _validateUser = false;
+                          passController.text.isEmpty &&
+                                  passController.text.length < 8
+                              ? _validatePass = true
+                              : _validatePass = false;
+                        });
+                        if (userController.text.isNotEmpty &&
+                            passController.text.isNotEmpty &&
+                            passController.text.length > 8) {
+                          Navigator.pushNamed(context, NavBarPage.id);
+                          showSnackBar(context, "successfully Logged in");
+                        } else {
+                          showSnackBar(context, "Wrong");
+                        }
+                      })),
+                )
+              ],
+            ),
           ),
         ),
       ),
