@@ -13,21 +13,21 @@ dependencies:
     sdk: flutter
 
   cupertino_icons: ^1.0.2
-  google_fonts: ^3.0.1
+  google_fonts: ^6.1.0
   shared_preferences: ^2.0.15
   carousel_slider: ^4.2.1
-  flutter_svg: ^1.1.6
-  flutter_form_builder: ^7.7.0
+  flutter_svg: ^2.0.9
+  flutter_form_builder: ^9.1.1
   flutter_localization: ^0.1.9
-  form_builder_validators: ^8.4.0
-  flutter_launcher_icons: ^0.11.0
+  form_builder_validators: ^9.1.0
+  flutter_launcher_icons: ^0.13.1
   font_awesome_flutter: ^10.3.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
-  flutter_lints: ^2.0.0
+  flutter_lints: ^3.0.1
 
 flutter:
   uses-material-design: true
